@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>BarRaider's Text File Updater</title>
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="sdtools.common.js"></script>
+    <script src="TextFileUpdater.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Websocket Details</summary>
+        </details>
+
+        <div class="sdpi-item" id="dvHomeAssistantUrl">
+            <div class="sdpi-item-label">Home Assistant Url:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="http://localhost" value="" id="homeAssistantUrl" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvHomeAssistantPort">
+            <div class="sdpi-item-label">Home Assistant Port:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="8123" value="" id="homeAssistantPort" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvAuthorizationToken">
+            <div class="sdpi-item-label">Authorisation Token:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="egABCDEFG" value="" id="authorizationToken" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceDomain">
+            <div class="sdpi-item-label">Service Domain:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="light" value="" id="serviceDomain" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvservice">
+            <div class="sdpi-item-label">Service:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="toggle" value="" id="service" oninput="setSettings()">
+        </div>
+
+
+        <div class="sdpi-item" id="dventityId">
+            <div class="sdpi-item-label">Entity ID:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="light.entity_name" value="" id="entityId" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceData">
+            <div class="sdpi-item-label">Service Data:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="json data here" value="" id="serviceData" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceImageOff">
+            <div class="sdpi-item-label">Image Off (Base64):</div>
+            <input class="sdpi-item-value sdProperty" placeholder="" value="" id="imageOff" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceImageOn">
+            <div class="sdpi-item-label">Image On (Base64):</div>
+            <input class="sdpi-item-value sdProperty" placeholder="" value="" id="imageOn" oninput="setSettings()">
+        </div>
+    </div>
+</body>
+</html>

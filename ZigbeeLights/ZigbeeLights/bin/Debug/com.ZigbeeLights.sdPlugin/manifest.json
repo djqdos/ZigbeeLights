@@ -1,0 +1,68 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Zigbee Lights",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "Lights",
+      "UUID": "com.ZigbeeLights.Lights",
+      "PropertyInspectorPath": "PropertyInspector/LightsPI.html"
+    },
+
+    {
+      "Name": "TelnetSwitcher",
+      "States": [
+        {
+          "Image": "",
+          "TitleAlignment": "bottom",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "TelnetSwitcher",
+      "UUID": "com.richb.telnetswitcher",
+      "PropertyInspectorPath": "PropertyInspector/TelnetSwitcherPI.html"
+    },
+
+    {
+      "Name": "SourceSwitcher",
+      "States": [
+        {
+          "Image": "",
+          "TitleAlignment": "bottom",
+          "FontSize": "16"
+        }
+      ],
+      "SupportedInMultiActions": false,
+      "Tooltip": "SourceSwitcher",
+      "UUID": "com.zigbeelights.sourceswitcher",
+      "PropertyInspectorPath": "PropertyInspector/SourceSwitcherPI.html"
+    }
+  ],
+  "Author": "Rich B",
+  "Name": "ZigbeeLights",
+  "Description": "Zigbee Lights",
+  "Icon": "Images/pluginIcon",
+  "URL": "TODO_ENTER_YOUR_HOMEPAGE",
+  "Version": "1.0",
+  "CodePath": "com.ZigbeeLights",
+  "Category": "RichB2",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.3"
+  }
+}

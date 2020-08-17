@@ -1,0 +1,8 @@
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\obj\Debug\TelnetService.csprojAssemblyReference.cache
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\obj\Debug\TelnetService.csproj.CoreCompileInputs.cache
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\bin\Debug\TelnetService.dll
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\bin\Debug\TelnetService.pdb
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\bin\Debug\TentacleSoftware.Telnet.dll
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\obj\Debug\TelnetService.csproj.CopyComplete
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\obj\Debug\TelnetService.dll
+c:\dev\ZigbeeLights\ZigbeeLights\TelnetService\obj\Debug\TelnetService.pdb

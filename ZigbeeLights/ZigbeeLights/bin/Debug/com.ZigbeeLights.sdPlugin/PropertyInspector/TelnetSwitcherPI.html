@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>BarRaider's Text File Updater</title>
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="sdtools.common.js"></script>
+    <script src="TextFileUpdater.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">AV Amp IP:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="192.168.1.40" value="" id="avampIP" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">AV Amp Port:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="8102" value="" id="avampPort" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">AV Amp Command:</div>
+            <select class="sdpi-item-value select" id="avampCommand">
+                <option value="06FN">TVSAT (06FN)</option>
+                <option value="04FN">BD (04FN)</option>
+                <option value="25FN">HDMI1 (25FN)</option>
+                <option value="20FN">HDMI2 (20FN)</option>
+                <option value="21FN">HDMI3 (21FN)</option>
+                <option value="22FN">HDMI4 (22FN)</option>
+                <option value="23FN">HDMI5 (23FN)</option>
+                <option value="VU">Volume Up (VU)</option>
+                <option value="VD">Volume Down (VD)</option>
+                <option value="MZ">Toggle Mute (MZ)</option>
+                <option value="PO">Power On (PO)</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

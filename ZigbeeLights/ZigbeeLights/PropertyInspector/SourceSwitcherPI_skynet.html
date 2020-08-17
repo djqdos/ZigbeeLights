@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover">
+    <meta name=apple-mobile-web-app-capable content=yes>
+    <meta name=apple-mobile-web-app-status-bar-style content=black>
+    <title>BarRaider's Text File Updater</title>
+    <link rel="stylesheet" href="sdpi.css">
+    <script src="sdtools.common.js"></script>
+    <script src="TextFileUpdater.js"></script>
+</head>
+<body>
+    <div class="sdpi-wrapper">
+        <details class="message">
+            <summary>Websocket Details</summary>
+        </details>
+
+        <div class="sdpi-item" id="dvHomeAssistantUrl">
+            <div class="sdpi-item-label">Home Assistant Url:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="http://localhost" value="" id="homeAssistantUrl" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvHomeAssistantPort">
+            <div class="sdpi-item-label">Home Assistant Port:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="8123" value="" id="homeAssistantPort" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvAuthorizationToken">
+            <div class="sdpi-item-label">Authorisation Token:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="egABCDEFG" value="" id="authorizationToken" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceDomain">
+            <div class="sdpi-item-label">Service Domain:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="light" value="" id="serviceDomain" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvservice">
+            <div class="sdpi-item-label">Service:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="toggle" value="" id="service" oninput="setSettings()">
+        </div>
+
+
+        <div class="sdpi-item" id="dventityId">
+            <div class="sdpi-item-label">Entity ID:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="media_player.pioneer_vsx_325" value="" id="entityId" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item" id="dvserviceData">
+            <div class="sdpi-item-label">Service Data:</div>
+            <input class="sdpi-item-value sdProperty" placeholder="json data here" value="" id="serviceData" oninput="setSettings()">
+        </div>
+
+        <div class="sdpi-item">
+            <div class="sdpi-item-label">Source:</div>
+            <select class="sdpi-item-value select" id="source">
+                <option value="PHONO">PHONO</option>
+                <option value="CD">CD</option>
+                <option value="TUNER">TUNER</option>
+                <option value="DVD">DVD</option>
+                <option value="TV">TV</option>
+                <option value="SAT/CBL">SAT/CBL</option>
+                <option value="MULTI CH IN">MULTI CH IN</option>
+                <option value="USB-DAC">USB-DAC</option>
+                <option value="DVR/BDR">DVR/BDR</option>
+                <option value="iPod/USB">iPod/USB</option>
+                <option value="HDMI 1">HDMI 1</option>
+                <option value="HDMI 2">HDMI 2</option>
+                <option value="HDMI 3">HDMI 3</option>
+                <option value="HDMI 4">HDMI 4</option>
+                <option value="HDMI 5">HDMI 5</option>
+                <option value="HDMI 6/MHL">HDMI 6/MHL</option>
+                <option value="BD">BD</option>
+                <option value="BT AUDIO">BT AUDIO</option>
+                <option value="HDMI 7">HDMI 7</option>
+                <option value="INTERNET RADIO">INTERNET RADIO</option>
+                <option value="PANDORA">PANDORA</option>
+                <option value="MEDIA SERVER">MEDIA SERVER</option>
+                <option value="FAVORITES">FAVORITES</option>
+                <option value="Spotify">SPOTIFY</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
